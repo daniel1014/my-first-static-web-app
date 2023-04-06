@@ -9,46 +9,4 @@ body {
   padding: 40px;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-form {
-  margin-bottom: 20px;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-input {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  outline: none;
-}
-
-button[type="submit"] {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.error-message {
-  margin-top: 10px;
-  color: #dc3545;
-  font-size: 14px;
-}
+  box-shadow: 0 2px 6px rgba
