@@ -14,7 +14,7 @@ const authorizedUsername = 'Daniel.Wong3@aecom.com';
 const authorizedPassword = 'aecom';
 
 // Serve static files (HTML, CSS)
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 // Define login route
 app.post('/login', (req, res) => {
@@ -34,7 +34,7 @@ app.post('/login', (req, res) => {
 });
 
 // Start the server
-const port = 3000; // replace with your desired port number
+const port = process.env.PORT || 3000; // Use the PORT environment variable if available, otherwise use 3000
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
