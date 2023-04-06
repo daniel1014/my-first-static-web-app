@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+  <title>User Login</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-    <iframe width="402" height="346" frameborder="0" scrolling="no" src="https://aecom.sharepoint.com/sites/BenchmarkingTool-PowerApp/_layouts/15/Doc.aspx?sourcedoc={da377a61-7f7e-4858-a1cf-735a59ced11e}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=false&resen=true&ed1JS=false"></iframe>
-  </main>
+  <div class="container">
+    <h2>User Login</h2>
+    <form id="loginForm" autocomplete="off">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <div id="errorMessage" class="error-message"></div>
+    <p>Don't have an account? <a href="#">Sign up</a></p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
